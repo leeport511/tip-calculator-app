@@ -1,0 +1,13 @@
+{
+  "name": "tip-calculator-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Leeport",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.83.4"
+  },
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w"
+  }
+}
