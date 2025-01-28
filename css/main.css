@@ -1,3 +1,148 @@
+.logo {
+  width: 87px;
+  height: 53px;
+  margin-top: 50px;
+  margin-bottom: 41px;
+}
 
+.splitter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+  border-radius: 25px;
+  max-width: 375px;
+  height: 789px;
+}
+.splitter-container .splitter-form input {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  padding: 0 18px 0 18px;
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 24px;
+}
+.splitter-container .splitter-form label, .splitter-container .splitter-form h3 {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+.splitter-container .splitter-form .bill {
+  margin-bottom: 32px;
+}
+.splitter-container .splitter-form .bill-input {
+  position: relative;
+  width: 100%;
+}
+.splitter-container .splitter-form .bill-input img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.splitter-container .splitter-form .tip {
+  margin-bottom: 32px;
+}
+.splitter-container .splitter-form .tip h3 {
+  margin-bottom: 16px;
+}
+.splitter-container .splitter-form .tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.splitter-container .splitter-form .tip-buttons .tip-button {
+  height: 48px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.splitter-container .splitter-form .tip-buttons .custom-tip {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.splitter-container .splitter-form .people {
+  margin-bottom: 32px;
+}
+.splitter-container .splitter-form .people-input {
+  position: relative;
+  width: 100%;
+}
+.splitter-container .splitter-form .people-input img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.splitter-container .splitter-result {
+  padding: 37px 24px 24px 24px;
+  background-color: hsl(183, 100%, 15%);
+  width: 100%;
+  border-radius: 15px;
+}
+.splitter-container .splitter-result h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.splitter-container .splitter-result .tip-amt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.splitter-container .splitter-result .tip-amt .per-person {
+  font-size: 13px;
+  color: hsl(184, 14%, 56%);
+}
+.splitter-container .splitter-result .tip-amt p {
+  font-size: 32px;
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
+}
+.splitter-container .splitter-result button {
+  margin-top: 12px;
+  width: 100%;
+  height: 48px;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 100;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */

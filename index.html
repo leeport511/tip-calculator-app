@@ -6,31 +6,60 @@
       <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/main.css">
       <title>Tip Calculator App</title>
 </head>
 <body>
-      <div>
-            <img src="#" alt="#">
+      <div class="logo">
+            <img src="./assets/images/logo.svg" alt="splitter logo">
       </div>
-      <main>
-            <form>
-                  <div>
+      <main class="splitter-container">
+            <form class="splitter-form">
+                  <div class="bill">
                         <label for="bill">Bill</label>
-                        <input type="text" id="bill">
+                        <div class="bill-input">
+                              <img src="./assets/images/icon-dollar.svg" alt="dollar icon">
+                              <input type="text" id="bill" name="bill" >
+                        </div>
                   </div>
-                  <div>
+                  <div class="tip">
                         <h3>Select Tip %</h3>
-                        <div>
-                              <button type="button" class="tip-button" data-tip="5">5%</button>
-                              <button type="button" class="tip-button" data-tip="10">10%</button>
-                              <button type="button" class="tip-button" data-tip="15">15%</button>
-                              <button type="button" class="tip-button" data-tip="25">25%</button>
-                              <button type="button" class="tip-button" data-tip="50">50%</button>
-                              <input type="button" class="tip-button custom-tip" placeholder="Custom">
+                        <div class="tip-buttons">
+                              <button type="button" value="5" class="tip-button" data-tip="5">5%</button>
+                              <button type="button" value="10" class="tip-button" data-tip="10">10%</button>
+                              <button type="button" value="15" class="tip-button" data-tip="15">15%</button>
+                              <button type="button" value="25" class="tip-button" data-tip="25">25%</button>
+                              <button type="button" value="50" class="tip-button" data-tip="50">50%</button>
+                              <input type="text"  name="custom-tip" class="custom-tip" placeholder="Custom" id="custom-tip">
+                        </div>
+                  </div>
+                  <div class="people">
+                        <label for="people">Number of People</label>
+                        <div class="people-input">
+                              <img src="./assets/images/icon-person.svg" alt="person icon">
+                              <input type="text" id="people" name="people" >
                         </div>
                   </div>                              
             </form>
+
+            <div class="splitter-result">
+                  <div class="tip-amt">
+                        <div>
+                              <h3>Tip Amount</h3>
+                              <p class="per-person">/ person</p>
+                        </div>
+                        <p id="tip-amount">$0.00</p>
+                  </div>
+                  <div class="tip-amt">
+                        <div>
+                              <h3>Total</h3>
+                              <p class="per-person">/ person</p>
+                        </div>
+                        <p id="tip-total">$0.00</p>
+                  </div>
+                  <button type="button" id="reset-button">Reset</button>
+            </div>     
       </main>
       
 
