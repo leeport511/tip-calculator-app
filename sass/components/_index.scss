@@ -1,6 +1,9 @@
 @use "../globals/variables";
 
 
+
+
+
 .logo {
       width: 87px;
       height: 53px;
@@ -94,6 +97,12 @@
                              cursor: pointer;
 
                         }
+
+                        .active{
+                              background-color: variables.$strong-cyan;
+                              color: variables.$very-dark-cyan;
+                              border: none; 
+                         }
 
                         .custom-tip {
                               background-color: variables.$very-light-grayish-cyan;

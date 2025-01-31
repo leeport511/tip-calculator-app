@@ -69,6 +69,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.splitter-container .splitter-form .tip-buttons .active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+}
 .splitter-container .splitter-form .tip-buttons .custom-tip {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);

@@ -18,11 +18,8 @@ const handleInputChange = (e) => {
       const parsedIntValue = value === '' ? 0 : parseInt(value);
 
 
-      if (id === 'bill') console.log("bill:" , parsedValue);
-      if (id === 'people') console.log("number of people", parseInt(value) || 0);
       if (id === 'custom-tip') { 
             selectedTip = parsedIntValue;
-            console.log('Custom Tip:', selectedTip);
             
       }
 
@@ -31,18 +28,23 @@ const handleInputChange = (e) => {
 
 tipContainer.addEventListener("click", (e) => {
       if(e.target.classList.contains("tip-button")) {
-            selectedTip = parseInt(e.target.dataset.tip);
-            console.log('selected tip %:', selectedTip);
-            
+            selectedTip = parseInt(e.target.dataset.tip);   
       }
-})
+
+     tipButtons.forEach(btn => btn.classList.remove('active'));
+     e.target.classList.add('active');
+
+});
+
+
+
+
 
 
 
 resetButton.addEventListener("click", () => {
       [billInput, peopleInput, customTipInput].forEach(input => input.value = "");
       selectedTip = 0;
-      console.log("Values Reset");
   });
   
   
