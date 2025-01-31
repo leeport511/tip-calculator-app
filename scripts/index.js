@@ -5,7 +5,8 @@ const peopleInput = document.getElementById('people');
 const customTipInput = document.getElementById('custom-tip');
 const tipContainer = document.querySelector(".tip-buttons");
 const tipButtons = document.querySelectorAll('.tip-button');
-const resetButton = document.getElementById('reset-button')
+const resetButton = document.getElementById('reset-button');
+const errorMessage = document.querySelector('.error-msg');
 
 // * Get Values
 
@@ -19,10 +20,22 @@ const handleInputChange = (e) => {
 
 
       if (id === 'custom-tip') { 
-            selectedTip = parsedIntValue;
-            
+            selectedTip = parsedIntValue;  
       }
 
+      if (id === 'people') {
+            e.target.classList.remove('green-border', 'error-border');
+
+        if (parsedValue === 0) {
+            e.target.classList.add('error-border');
+            errorMessage.classList.remove('hidden');
+            
+
+        } else if (parsedValue !== '') {
+            e.target.classList.add('green-border');
+            errorMessage.classList.add('hidden');
+      }
+      }
 } 
 
 

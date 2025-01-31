@@ -15,6 +15,12 @@
   max-width: 375px;
   height: 789px;
 }
+.splitter-container .splitter-form .error-border {
+  outline: 3px solid hsl(13, 70%, 61%);
+}
+.splitter-container .splitter-form .green-border {
+  outline: 3px solid hsl(172, 67%, 45%);
+}
 .splitter-container .splitter-form input {
   width: 100%;
   height: 40px;
@@ -27,6 +33,7 @@
   font-family: "Space Mono", monospace;
   font-weight: bold;
   font-size: 24px;
+  outline: none;
 }
 .splitter-container .splitter-form label, .splitter-container .splitter-form h3 {
   color: hsl(186, 14%, 43%);
@@ -69,6 +76,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.splitter-container .splitter-form .tip-buttons .tip-button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 75%);
+  border: none;
+}
 .splitter-container .splitter-form .tip-buttons .active {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
@@ -84,6 +96,7 @@
 }
 .splitter-container .splitter-form .people {
   margin-bottom: 32px;
+  position: relative;
 }
 .splitter-container .splitter-form .people-input {
   position: relative;
@@ -94,6 +107,17 @@
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+}
+.splitter-container .splitter-form .people .error-msg {
+  position: absolute;
+  color: hsl(13, 70%, 61%);
+  font-weight: bold;
+  font-size: 16px;
+  top: 0;
+  right: 0;
+}
+.splitter-container .splitter-form .people .hidden {
+  display: none;
 }
 .splitter-container .splitter-result {
   padding: 37px 24px 24px 24px;
