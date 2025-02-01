@@ -18,10 +18,28 @@ const handleInputChange = (e) => {
       const parsedValue = value === '' ? 0 : parseFloat(value);
       const parsedIntValue = value === '' ? 0 : parseInt(value);
 
+      //todo: Probar si lo puedo hacer con switch
+
+      if ( id === 'bill') {
+            e.target.classList.remove('green-border');
+
+            if (parsedValue ==! '' || parsedValue > 0 ) {
+                  e.target.classList.add('green-border')   
+            };
+      };
+
 
       if (id === 'custom-tip') { 
-            selectedTip = parsedIntValue;  
-      }
+            e.target.classList.remove('green-border', 'error-border')
+            selectedTip = parsedIntValue;
+
+            if (selectedTip === 0 || selectedTip >= 100) {
+                  e.target.classList.add('error-border');
+            } else {
+                  e.target.classList.add('green-border');
+            };
+            
+      };
 
       if (id === 'people') {
             e.target.classList.remove('green-border', 'error-border');
@@ -34,9 +52,9 @@ const handleInputChange = (e) => {
         } else if (parsedValue !== '') {
             e.target.classList.add('green-border');
             errorMessage.classList.add('hidden');
-      }
-      }
-} 
+      };
+      };
+} ;
 
 
 tipContainer.addEventListener("click", (e) => {
