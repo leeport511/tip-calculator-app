@@ -52,6 +52,10 @@
                   font-weight: bold;
                   font-size: 24px;
                   outline: none;
+
+                  &::placeholder {
+                        color: variables.$grayish-cyan;
+                  }
                   
             }
 
@@ -225,14 +229,122 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1280px) {
+
+
+      .logo {
+            width: 87px;
+            height: 53px;
+            margin-top: 120px;
+            margin-bottom: 88px;
+      }
+      
+    
+      //CONTENEDOR
+      .splitter-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 48px;
+            padding: 32px 32px 32px 48px;
+            max-width: 920px;
+            height: 481px;
+      
+      
+      
+            .splitter-form {
+
+                  width: 379px;
+                  height: 388px;
+            
+      
+                  input {
+                        width: 100%;
+                        height: 48px; 
+                        
+                  }
+
+      
+                  .bill {
+                        margin-bottom: 40px;
+      
+                  }
+      
+                  .tip {
+      
+                        margin-bottom: 40px;
+      
+      
+                        &-buttons {
+      
+                              display: grid;
+                              grid-template-columns: repeat(3, 1fr);
+                              gap: 16px 14px;
+      
+      
+                              .tip-button {
+                                   height: 48px;
+                                   width: 117px;
+      
+                              }
+
+      
+                              .custom-tip {
+                                    background-color: variables.$very-light-grayish-cyan;
+                                    color: variables.$very-dark-cyan;
+                                    height: 48px;
+                                    width: 117px;
+                                    padding: 0;
+
+                                    &::placeholder {
+                                          text-align: center;
+                                    }
+                              }
+                        }
+                  }
+      
+                .people {
+      
+                  margin-bottom: 32px;
+
+                  
+                }  
+      
+            }     
+      
+            .splitter-result {
+      
+                 padding: 40px;
+                 width: 413px;
+                 height: 417px;
+
+                 
+                 .tip-amt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 25px;
+                        
+                        
+                        .per-person{
+                            font-size: 13px;
+                            color: variables.$grayish-cyan  
+                        }
+      
+                        p {
+                            font-size: 48px; 
+                        }
+      
+                 }
+      
+                 button {
+                        margin-top: 105px;
+                        height: 48px;      
+                 }
+                  
+            }
+      
+      }
       
 }

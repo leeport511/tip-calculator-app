@@ -35,6 +35,9 @@
   font-size: 24px;
   outline: none;
 }
+.splitter-container .splitter-form input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
 .splitter-container .splitter-form label, .splitter-container .splitter-form h3 {
   color: hsl(186, 14%, 43%);
   font-size: 16px;
@@ -158,6 +161,82 @@
   border: none;
 }
 
+@media screen and (min-width: 1280px) {
+  .logo {
+    width: 87px;
+    height: 53px;
+    margin-top: 120px;
+    margin-bottom: 88px;
+  }
+  .splitter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    padding: 32px 32px 32px 48px;
+    max-width: 920px;
+    height: 481px;
+  }
+  .splitter-container .splitter-form {
+    width: 379px;
+    height: 388px;
+  }
+  .splitter-container .splitter-form input {
+    width: 100%;
+    height: 48px;
+  }
+  .splitter-container .splitter-form .bill {
+    margin-bottom: 40px;
+  }
+  .splitter-container .splitter-form .tip {
+    margin-bottom: 40px;
+  }
+  .splitter-container .splitter-form .tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 14px;
+  }
+  .splitter-container .splitter-form .tip-buttons .tip-button {
+    height: 48px;
+    width: 117px;
+  }
+  .splitter-container .splitter-form .tip-buttons .custom-tip {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    height: 48px;
+    width: 117px;
+    padding: 0;
+  }
+  .splitter-container .splitter-form .tip-buttons .custom-tip::placeholder {
+    text-align: center;
+  }
+  .splitter-container .splitter-form .people {
+    margin-bottom: 32px;
+  }
+  .splitter-container .splitter-result {
+    padding: 40px;
+    width: 413px;
+    height: 417px;
+  }
+  .splitter-container .splitter-result .tip-amt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .splitter-container .splitter-result .tip-amt .per-person {
+    font-size: 13px;
+    color: hsl(184, 14%, 56%);
+  }
+  .splitter-container .splitter-result .tip-amt p {
+    font-size: 48px;
+  }
+  .splitter-container .splitter-result button {
+    margin-top: 105px;
+    height: 48px;
+  }
+}
 * {
   margin: 0;
   padding: 100;
